@@ -1,0 +1,6 @@
+matplotlib>=3.4.2
+numpy>=1.19.5
+scipy>=1.7.0
+click>=8.0.1
+pyDOE>=0.3.8
+tensorflow>=2.5.0
