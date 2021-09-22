@@ -1,6 +1,7 @@
 <!-- PROJECT SHIELDS -->
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![DOI](https://zenodo.org/badge/409099116.svg)](https://zenodo.org/badge/latestdoi/409099116)
 
 # Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators
 Prospective contribution to the <a href="https://www.mathmod.at/">MATHMOD 2022 Vienna</a> conference.
@@ -105,7 +106,7 @@ Jörg Fehr - joerg.fehr@itm.uni-stuttgart.de
 
 Project Link: [https://github.com/Jonas-Nicodemus/PINNs-based-MPC](https://github.com/Jonas-Nicodemus/PINNs-based-MPC)
 
-[license-shield]: https://img.shields.io/github/license/Jonas-Nicodemus/PINNs-based-MPC.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Jonas-Nicodemus/PINNs-based-MPC.svg
 [license-url]: https://github.com/Jonas-Nicodemus/PINNs-based-MPC/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonas-nicodemus-a34931209/
