@@ -1,7 +1,6 @@
 import logging
 import os
 
-import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 
@@ -12,12 +11,6 @@ from utils.plotting import plot_input_sequence, plot_states, plot_absolute_error
 from utils.system import f
 
 if __name__ == "__main__":
-    plt.rcParams.update({
-        "font.family": "serif",  # use serif/main font for text elements
-        "text.usetex": True,  # use inline math for ticks
-        "pgf.rcfonts": False  # don't setup fonts from rc parameters
-    })
-
     logging.getLogger().setLevel(logging.INFO)
     logging.getLogger('matplotlib').setLevel(logging.WARNING)
 

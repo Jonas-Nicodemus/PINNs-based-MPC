@@ -1,9 +1,10 @@
 <!-- PROJECT SHIELDS -->
+[![arXiv][arxiv-shield]][arxiv-url]
+[![DOI][doi-shield]][doi-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![DOI](https://zenodo.org/badge/409099116.svg)](https://zenodo.org/badge/latestdoi/409099116)
 
-# Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators
+# [Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators](https://arxiv.org/abs/2109.10793)
 Prospective contribution to the <a href="https://www.mathmod.at/">MATHMOD 2022 Vienna</a> conference.
 
 <!-- TABLE OF CONTENTS -->
@@ -13,7 +14,7 @@ Prospective contribution to the <a href="https://www.mathmod.at/">MATHMOD 2022 V
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <!--<li><a href="#citing">Citing</a></li>-->
+        <li><a href="#citing">Citing</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -41,14 +42,14 @@ Finally, we present our results using our PINN-based MPC to solve a tracking pro
 
 <!-- For more information, please refer to the following: doi -->
 
-<!--### Citing
+### Citing
 If you use this project for academic work, please consider citing our
-[publication](doi):
+[publication](https://arxiv.org/abs/2109.10793):
 
-    J. Nicodemus, J. Kneifl, J. Fehr, B. Unger
-    Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators
+    J. Nicodemus, J. Kneifl, J. Fehr, and B. Unger
+    Physics-informed Neural Networks-based Model Predictive Control for Multi-link Manipulators
+    ArXiv e-print 2109.10793, 2021.
 
--->
 ### Built With
 
 * [TensorFlow](https://www.tensorflow.org/)
@@ -106,7 +107,11 @@ Jörg Fehr - joerg.fehr@itm.uni-stuttgart.de
 
 Project Link: [https://github.com/Jonas-Nicodemus/PINNs-based-MPC](https://github.com/Jonas-Nicodemus/PINNs-based-MPC)
 
-[license-shield]: https://img.shields.io/github/license/Jonas-Nicodemus/PINNs-based-MPC.svg
+[license-shield]: https://img.shields.io/github/license/Jonas-Nicodemus/PINNs-based-MPC.svg?style=for-the-badge
 [license-url]: https://github.com/Jonas-Nicodemus/PINNs-based-MPC/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonas-nicodemus-a34931209/
+[doi-shield]: https://img.shields.io/badge/DOI-10.5281%20%2F%20zenodo.5520662-blue.svg?style=for-the-badge
+[doi-url]: https://zenodo.org/badge/latestdoi/409099116
+[arxiv-shield]: https://img.shields.io/badge/arXiv-2109.10793-b31b1b.svg?style=for-the-badge
+[arxiv-url]: https://arxiv.org/abs/2109.10793

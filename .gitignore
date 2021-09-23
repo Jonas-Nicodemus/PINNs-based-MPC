@@ -133,4 +133,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Weights and figures
 /checkpoints/
+/figures/

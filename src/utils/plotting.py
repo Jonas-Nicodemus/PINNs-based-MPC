@@ -6,7 +6,7 @@ import numpy as np
 from matplotlib import patches
 from matplotlib.animation import FuncAnimation
 
-FIGURES_PATH = os.path.join('../../figures')
+FIGURES_PATH = os.path.join('../figures')
 FIGURE_WIDTH_PT = 410
 
 
@@ -210,6 +210,7 @@ def animate(Y_test, Y_preds, labels, fraction=1, fps=100, save_ani=False):
         # ani.save(os.path.join(FIGURES_PATH, 'ani.mp4'), writer='ffmpeg', fps=fps)
         ani.save(os.path.join(FIGURES_PATH, 'ani.gif'), writer='imagemagick', fps=fps)
 
+    fig.tight_layout()
     plt.show()
 
 
@@ -249,6 +250,7 @@ def plot_states(T, Z_ref, Z_pred=None, Z_mpc=None, filename=None):
 
     ax.grid('on')
     ax.legend(loc='best')
+    fig.tight_layout()
     if filename is not None:
         save_fig(fig, filename)
     plt.show()
@@ -284,4 +286,5 @@ def plot_absolute_error(T, Z_ref, Z_pred=None, Z_mpc=None, filename=None):
     ax.legend(loc='best')
     if filename is not None:
         save_fig(fig, filename)
+    fig.tight_layout()
     plt.show()

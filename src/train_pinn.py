@@ -6,7 +6,6 @@ import time
 
 import numpy as np
 import tensorflow as tf
-import matplotlib.pyplot as plt
 
 from model.pinn import PINN
 from utils.data import generate_data_points, generate_collocation_points, load_data
@@ -31,7 +30,7 @@ class ManipulatorInformedNN(PINN):
 
         super().__init__(layers, lb, ub)
         self.t = None
-        self.z0 = None
+        self.x0 = None
         self.u = None
 
         if X_f is not None:
@@ -39,7 +38,7 @@ class ManipulatorInformedNN(PINN):
 
     def set_collocation_points(self, X_f):
         self.t = self.tensor(X_f[:, 0:1])
-        self.z0 = self.tensor(X_f[:, 1:5])
+        self.x0 = self.tensor(X_f[:, 1:5])
         self.u = self.tensor(X_f[:, 5:7])
 
     @tf.function
@@ -55,18 +54,18 @@ class ManipulatorInformedNN(PINN):
 
         if X_f is None:
             t = self.t
-            z0 = self.z0
+            x0 = self.x0
             u = self.u
         else:
             t = self.tensor(X_f[:, 0:1])
-            z0 = self.tensor(X_f[:, 1:5])
+            x0 = self.tensor(X_f[:, 1:5])
             u = self.tensor(X_f[:, 5:7])
 
         i_PR90 = tf.ones(len(t), dtype=tf.float64) * 161
 
         with tf.GradientTape(persistent=True) as tape:
             tape.watch(t)
-            y_pred = self.model(tf.concat([t, z0, u], axis=1))
+            y_pred = self.model(tf.concat([t, x0, u], axis=1))
 
             q1 = y_pred[:, 0:1]
             q2 = y_pred[:, 1:2]
@@ -94,14 +93,8 @@ class ManipulatorInformedNN(PINN):
 
 
 if __name__ == "__main__":
-    LOAD_WEIGHTS = False
-    TRAIN_NET = True
-
-    plt.rcParams.update({
-        "font.family": "serif",  # use serif/main font for text elements
-        "text.usetex": True,  # use inline math for ticks
-        "pgf.rcfonts": False  # don't setup fonts from rc parameters
-    })
+    LOAD_WEIGHTS = True
+    TRAIN_NET = False
 
     logging.getLogger().setLevel(logging.INFO)
     logging.getLogger('matplotlib').setLevel(logging.WARNING)
@@ -158,7 +151,7 @@ if __name__ == "__main__":
     plot_states(T, Y_test, Y_pred)
     plot_absolute_error(T, Y_test, Y_pred)
 
-    animate(Y_test[::10], [Y_pred[::10]], ['PINN'], fps=1 / (10 * t_step), save_ani=False)
+    animate(Y_test[::10], [Y_pred[::10]], ['PINN'], fps=1 / (10 * t_step))
 
     if click.confirm('Do you want to save (overwrite) the models weights?'):
         pinn.save_weights(os.path.join(weights_path, 'easy_checkpoint'))
