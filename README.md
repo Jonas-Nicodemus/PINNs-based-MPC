@@ -34,11 +34,7 @@ Prospective contribution to the <a href="https://www.mathmod.at/">MATHMOD 2022 V
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-We discuss nonlinear model predictive control (NMPC) for multi-body dynamics via physics-informed machine learning methods.
-Physics-informed neural networks (PINNs) are a promising tool for approximating (partial) differential equations.
-PINNs are not suited for control tasks in their original form since they are not designed to handle variable control actions or variable initial conditions.
-Thus, we present the idea of enhancing PINNs by adding control actions and initial conditions as additional network inputs. This enables the controller design based on a PINN as an approximation of the underlying system dynamics.
-Finally, we present our results using our PINN-based MPC to solve a tracking problem for a complex mechanical system,  a multi-link manipulator.
+We discuss nonlinear model predictive control (NMPC) for multi-body dynamics via physics-informed machine learning methods. Physics-informed neural networks (PINNs) are a promising tool to approximate (partial) differential equations. PINNs are not suited for control tasks in their original form since they are not designed to handle variable control actions or variable initial values. We thus present the idea of enhancing PINNs by adding control actions and initial conditions as additional network inputs. The high-dimensional input space is subsequently reduced via a sampling strategy and a zero-hold assumption. This strategy enables the controller design based on a PINN as an approximation of the underlying system dynamics. The additional benefit is that the sensitivities are easily computed via automatic differentiation, thus leading to efficient gradient-based algorithms. Finally, we present our results using our PINN-based MPC to solve a tracking problem for a complex mechanical system, a multi-link manipulator.
 
 <!-- For more information, please refer to the following: doi -->
 
