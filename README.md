@@ -4,7 +4,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# [Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators](https://arxiv.org/abs/2109.10793)
+# [Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators](https://doi.org/10.1016/j.ifacol.2022.09.117)
 Prospective contribution to the <a href="https://www.mathmod.at/">MATHMOD 2022 Vienna</a> conference.
 
 <!-- TABLE OF CONTENTS -->
@@ -40,11 +40,11 @@ We discuss nonlinear model predictive control (NMPC) for multi-body dynamics via
 
 ### Citing
 If you use this project for academic work, please consider citing our
-[publication](https://arxiv.org/abs/2109.10793):
+[publication](https://doi.org/10.1016/j.ifacol.2022.09.117):
 
-    J. Nicodemus, J. Kneifl, J. Fehr, and B. Unger
-    Physics-informed Neural Networks-based Model Predictive Control for Multi-link Manipulators
-    ArXiv e-print 2109.10793, 2021.
+    Jonas Nicodemus, Jonas Kneifl, Jörg Fehr, Benjamin Unger,
+    Physics-informed Neural Networks-based Model Predictive Control for Multi-link Manipulators,
+    IFAC-PapersOnLine, Volume 55, Issue 20, 2022.
 
 ### Built With
 
