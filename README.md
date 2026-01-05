@@ -4,8 +4,18 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# [Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators](https://doi.org/10.1016/j.ifacol.2022.09.117)
-Prospective contribution to the <a href="https://www.mathmod.at/">MATHMOD 2022 Vienna</a> conference.
+[license-shield]: https://img.shields.io/github/license/Jonas-Nicodemus/PINNs-based-MPC.svg?style=for-the-badge
+[license-url]: https://github.com/Jonas-Nicodemus/PINNs-based-MPC/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jonas-nicodemus-a34931209/
+[doi-shield]: https://img.shields.io/badge/DOI-10.5281%20%2F%20zenodo.5520662-blue.svg?style=for-the-badge
+[doi-url]: https://zenodo.org/badge/latestdoi/409099116
+[arxiv-shield]: https://img.shields.io/badge/arXiv-2109.10793-b31b1b.svg?style=for-the-badge
+[arxiv-url]: https://arxiv.org/abs/2109.10793
+[ifac-url]: https://doi.org/10.1016/j.ifacol.2022.09.117
+
+# [Physics-Informed Neural Networks-based Model Predictive Control for Multi-link Manipulators][ifac-url]
+Contribution to the [MATMOD 2022](https://www.mathmod.at/) conference in Vienna.
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -40,7 +50,7 @@ We discuss nonlinear model predictive control (NMPC) for multi-body dynamics via
 
 ### Citing
 If you use this project for academic work, please consider citing our
-[publication](https://doi.org/10.1016/j.ifacol.2022.09.117):
+[publication][ifac-url]:
 
     Jonas Nicodemus, Jonas Kneifl, Jörg Fehr, Benjamin Unger,
     Physics-informed Neural Networks-based Model Predictive Control for Multi-link Manipulators,
@@ -93,21 +103,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Jonas Nicodemus - jonas.nicodemus@simtech.uni-stuttgart.de
+Jonas Nicodemus - jonas.nicodemus@icloud.com
 
-Benjamin Unger - benjamin.unger@simtech.uni-stuttgart.de
-
-Jonas Kneifl - jonas.kneifl@itm.uni-stuttgart.de
-
+Benjamin Unger - benjamin.unger@kit.edu\
+Jonas Kneifl - jonas.kneifl@itm.uni-stuttgart.de\
 Jörg Fehr - joerg.fehr@itm.uni-stuttgart.de
 
 Project Link: [https://github.com/Jonas-Nicodemus/PINNs-based-MPC](https://github.com/Jonas-Nicodemus/PINNs-based-MPC)
-
-[license-shield]: https://img.shields.io/github/license/Jonas-Nicodemus/PINNs-based-MPC.svg?style=for-the-badge
-[license-url]: https://github.com/Jonas-Nicodemus/PINNs-based-MPC/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/jonas-nicodemus-a34931209/
-[doi-shield]: https://img.shields.io/badge/DOI-10.5281%20%2F%20zenodo.5520662-blue.svg?style=for-the-badge
-[doi-url]: https://zenodo.org/badge/latestdoi/409099116
-[arxiv-shield]: https://img.shields.io/badge/arXiv-2109.10793-b31b1b.svg?style=for-the-badge
-[arxiv-url]: https://arxiv.org/abs/2109.10793
